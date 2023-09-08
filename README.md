@@ -1,7 +1,5 @@
 <div align="center">
-
-![Icon](https://semantichtml.github.io/icon.png)
-
+<img src="https://semantichtml.github.io/icon.png" width="120"/>
 <h1>Semantic HTML Website</h1>
 <p>The Semantic HTML Convention Website, build on Vue.js</p>
 </div>
