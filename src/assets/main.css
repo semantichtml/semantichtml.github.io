@@ -63,7 +63,7 @@ nav a:hover {
 }
 
   main h1 {
-    color: #212121;
+    color: #101010;
     font-family: 'Poppins';
     font-size: 65px;
     font-style: normal;
@@ -93,7 +93,7 @@ nav a:hover {
 @media (prefers-color-scheme: dark) {
   body {
   color: #E0E0E0;
-  background-color: #212121;
+  background-color: #101010;
   }
 }
 

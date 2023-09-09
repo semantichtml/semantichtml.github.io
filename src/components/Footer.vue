@@ -12,13 +12,7 @@ footer {
     padding: 15px;
 }
 
-@media (prefers-color-scheme: dark) {
-    footer {
-    font-family: 'Inter';
-    background-color: #2D2D2D;
-    }
-
-    #red {
+#red {
         color: #dd2e44;
     }
 
@@ -29,6 +23,22 @@ footer {
 
     #credits {
         font-weight: 700;
+    }
+
+    #copyright {
+        font-weight: 600;
+        color: #000000;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000 !important;
+    }
+
+@media (prefers-color-scheme: dark) {
+    footer {
+    font-family: 'Inter';
+    background-color: #181818;
     }
 
     #copyright {
