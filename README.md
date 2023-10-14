@@ -5,7 +5,7 @@
 </div>
 
 ## Development
-As mentioned above it's build on Vue.js and Vite, so for local development do the following
+As mentioned above it's build on Vue.js and Vite, so for local development do the following:
 
 ### Load everything
 
@@ -25,8 +25,5 @@ npm run dev
 npm run build
 ```
 
-### Publishing it to GitHub Pages
-
-```sh
-npm run deploy
-```
+>NOTE
+>Every new commit that doesn't have `[skip actions]` or [others](https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs) will be build and put on the page.

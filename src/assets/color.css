@@ -1,0 +1,21 @@
+:root {
+    --white: #fff;
+    --white-smoke: #F3F3F3;
+    --platinum: #E0E0E0;
+    
+    --black: #000;
+    --erie-black: #181818;
+    --ligher-erie-black: #222222;
+
+    --text-color: var(--black);
+    --aeolus-card: var(--platinum);
+    --footer-bg: var(--white-smoke);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --text-color: var(--white);
+    --aeolus-card: var(--ligher-erie-black);
+    --footer-bg: var(--erie-black);
+    }
+}
