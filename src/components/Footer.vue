@@ -1,5 +1,6 @@
 <template>
     <footer>
+        <a id="source-code" href="https://github.com/semantichtml/semantichtml.github.io"><i class="fa-brands fa-github" /></a>
         <p id="credits">Made with <i class="fa-solid fa-heart" id="red"></i> by <a id="me" href="https://gabs.eu.org">Gabs</a></p>
         <p id="copyright">© 2023 Gabs/Gabriel Cozma. All rights reserved.</p>
     </footer>
@@ -33,6 +34,10 @@ footer {
     a {
         text-decoration: none;
         color: #000000 !important;
+    }
+
+    #source-code code {
+        font-weight: 700;
     }
 
 @media (prefers-color-scheme: dark) {

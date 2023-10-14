@@ -36,7 +36,7 @@
 #external-links li a {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid #E0E0E0;
+  border: 2px solid #fbfbfb;
   background-color: #00ad9900;
   font-weight: 700;
   color: #000;
@@ -44,5 +44,19 @@
   font-size: 18px;
   text-decoration: none;
   transition: background-color .3s,color .3s;
+}
+
+@media (prefers-color-scheme: light) {
+  #external-links h1 {
+    color: #000;
+  }
+
+  #external-links {
+    background-color: #fcfcfc;
+  }
+
+  #external-links li a {
+    border-color: #000;
+  }
 }
 </style>

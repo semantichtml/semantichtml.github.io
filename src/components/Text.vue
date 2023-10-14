@@ -17,80 +17,80 @@
     <br>The web is evolving towards cleaner and more structured code, and Semantic HTML plays a vital role in this transition. As search engines increasingly prioritize structured data, websites that implement schema.org markup alongside Semantic HTML will likely gain a competitive advantage in SEO. Staying updated with these trends can position your website for success in the ever-changing online landscape.
     </p>
     </section>
-    <img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="Sections" width="200" height="250" id="img-2"> 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/HTML_element_content_categories.png" alt="Image for wikipedia" width="400" height="300" id="img-1">
+    <img src="/sh-exemple-dark.svg" alt="Sections" width="250" id="img-2" class="img-dark"> 
+    <img src="/sh-exemple-light.svg" alt="Sections" width="250" id="img-2" class="img-light"> 
     </section> 
 </template>
 
 <style>
+
+.img-dark {
+  display: none;
+}
+
+.img-light {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .img-dark {
+    display: block;
+  }
+
+  .img-light {
+    display: none;
+  }
+}
+/* Base styles */
 #section-text {
-    margin: 40px 100px;
+  margin: 40px 100px;
 }
 
-h2 {
-    font-family: 'Poppins';
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
 }
 
-h3 {
-    font-family: 'Poppins';
-    font-size: 25px;
-}
-#first {
-    width: 100%;
-}
-
-#second {
-    font-family: 'Inter';
-    width: 750px;
-}
-
-#third {
-    width: 750px;
-    margin-top: -30px;
-}
-
-#img-1 {
-    margin-left: 980px;
-    margin-top: -700px !important;
-    position: absolute;
-    border-radius: 6%;
+#first, #second, #third {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 #img-2 {
-    border-radius: 6%;
-    margin-left: 1080px;
-    margin-top: -350px !important;
-    position: absolute;
+  margin-top: 250px; /* Ensure a gap between text and images */
+  width: 300px;
 }
 
-#body {
-    margin: 0 10%;
-}
-
-a {
-    text-decoration: none;
-}
-
-@media screen and (max-width: 768px){
-  #section-text {
-    margin: 0 !important;
-}
-
-#body {
-    margin: 0 10px;
-}
-
-p {
-    max-width: 100% !important;
-}
+/* Desktop styles */
 #img-1 {
-    margin-left: 0;
-    margin-top: 0 !important;
+  float: right;
+  margin-left: 20px;
 }
 
 #img-2 {
-    margin-left: 0;
-    margin-top: 20px !important;
+  float: right;
+  margin-left: 20px;
 }
+
+#body {
+  margin: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Ensure images appear on the right when there's enough space */
+@media screen and (min-width: 769px) {
+  #img-1, #img-2 {
+    flex: 0 0 calc(0% - 250px); /* 50% width with a small gap */
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 1588px) {
+  #img-1, #img-2 {
+    margin-top: 5%;
+  }
 }
 </style>
