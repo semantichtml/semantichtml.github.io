@@ -25,5 +25,5 @@ npm run dev
 npm run build
 ```
 
->NOTE
+>[!NOTE]
 >Every new commit that doesn't have `[skip actions]` or [others](https://docs.github.com/en/actions/managing-workflow-runs/skipping-workflow-runs) will be build and put on the page.
