@@ -16,8 +16,9 @@
 }
 
 #external-links h1 {
-    color: #E0E0E0;
+    color: var(--text-color);
 }
+
 #external-links ul {
   display: flex;
   text-align: center;
@@ -39,11 +40,21 @@
   border: 2px solid #fbfbfb;
   background-color: #00ad9900;
   font-weight: 700;
-  color: #000;
+  color: #fbfbfb;
   border-radius: 6px;
   font-size: 18px;
   text-decoration: none;
   transition: background-color .3s,color .3s;
+}
+
+#external-links li a:hover {
+  background-color:  #fbfbfb;
+  color: #161616 !important;
+}
+
+#external-links li a:active {
+  background-color:  #ffffff;
+  color: #161616 !important;
 }
 
 @media (prefers-color-scheme: light) {
@@ -57,6 +68,13 @@
 
   #external-links li a {
     border-color: #000;
+    color: #000;
+  }
+
+  #external-links li a:hover {
+    border-color: #2f2f2f;
+    background-color: #121212;
+    color: #ffffff !important;
   }
 }
 </style>

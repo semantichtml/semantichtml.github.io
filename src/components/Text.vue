@@ -61,6 +61,24 @@ h2, h3 {
   width: 300px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    transition: all 300ms ease-out;
+}
+  
+  img:hover {
+    transform: scale(1.06);
+    cursor: zoom-in;
+  }
+  
+  img:active {
+    transform: scale(1.35);
+  }
+
 /* Desktop styles */
 #img-1 {
   float: right;
