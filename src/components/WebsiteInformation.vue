@@ -25,7 +25,7 @@
         <!-- Dependencies -->
         <div class="dependencies">
             <h1>Dependencies</h1>
-            <div class="dependency-item"><b>vue</b> - 3.3.13</div>
+            <div class="dependency-item"><b>vue</b> - 3.4.3</div>
             <div class="dependency-item"><b>vite</b> - 4.2.1</div>
             <div class="divider"></div>
             <div class="dependency-item"><b>vue-router</b> - 4.2.5</div>
