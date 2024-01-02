@@ -17,4 +17,5 @@ import ExternalLinks from './components/ExternalLinks.vue';
     <ExternalLinks />
   </section>
   <Footer />
+  <router-view />
 </template>
