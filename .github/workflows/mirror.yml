@@ -15,6 +15,6 @@ jobs:
     - name: mirror-repository
       uses: spyoungtech/mirror-action@v0.5.1
       with:
-        REMOTE: 'https://codeberg.org/sematic/pages.git'
+        REMOTE: 'https://codeberg.org/sematichtml/pages.git'
         GIT_USERNAME: gxbs
         GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
