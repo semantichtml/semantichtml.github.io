@@ -13,37 +13,43 @@
   </footer>
 </template>
 
-<style>
+<style lang="scss">
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
 footer {
   text-align: center;
   background-color: var(--footer-bg);
   padding: 15px;
-}
 
-#red {
-  color: #dd2e44;
-}
+  #red {
+    color: #dd2e44;
+  }
 
-#me {
-  font-weight: 900;
-  text-decoration: underline;
-}
+  #me {
+    font-weight: 900;
+    text-decoration: underline;
+  }
 
-#credits {
-  font-weight: 700;
-}
+  #credits {
+    font-weight: 700;
+  }
 
-#copyright {
-  font-weight: 600;
-  color: var(--text-color);
-}
+  #copyright {
+    font-weight: 600;
+    color: var(--text-color);
+  }
 
-a {
-  text-decoration: none;
-  color: var(--text-color) !important;
-}
+  a {
+    text-decoration: none;
+    color: var(--text-color) !important;
+  }
 
-#source-code code {
-  font-weight: 700;
+  #source-code {
+    font-size: 25px;
+  }
+
+  @media print {
+    display: none;
+  }
 }
 </style>

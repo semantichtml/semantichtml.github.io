@@ -1,133 +1,80 @@
-@import "./base";
-@import "./color";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+@import "color";
 
 :root {
   font-family: "Inter", sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  :root {
+
+  @supports (font-variation-settings: normal) {
     font-family: "Inter var", sans-serif;
   }
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  top: 0%;
-  height: 80px;
-  padding: 0 30px;
-  border-radius: 0% 0% 1% 1%;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  z-index: 1;
-}
-
-h1 {
-  color: #000;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 96.023%;
-}
-
-nav {
-  margin-right: 50px;
-  display: flex;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin-left: 20px;
-}
-
-nav a {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #111;
-  text-decoration: none;
-  transition: color 0.2s, background-image 1.2s;
-  background-image: linear-gradient(to right, #111, #111);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-nav a:hover {
-  color: transparent;
-  background-image: linear-gradient(to right, #1e222b, #ff6565);
-}
-
-main h1 {
-  color: #101010;
-  font-family: "Poppins";
-  font-size: 65px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 94.523%;
-  text-align: left;
-  position: relative;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-main {
-  display: flex;
-  text-align: center;
-  width: 100%;
-  height: 800px;
-  background: linear-gradient(95deg, #92ff7a 32.27%, #ddef6f 68.51%);
 }
 
 body {
   margin: 0;
   background-color: #fffdf6;
-}
 
-@media (prefers-color-scheme: dark) {
-  body {
+  @media (prefers-color-scheme: dark) {
     color: #e0e0e0;
     background-color: #101010;
   }
 }
 
-@media screen and (max-width: 768px) {
-  main h1 {
-    font-size: 50px;
+header {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 45rem;
+  background: linear-gradient(95deg, #92ff7a 32.27%, #ddef6f 68.51%);
+
+  h1 {
+    color: #101010;
+    font-family: "Poppins";
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.523%;
+    text-align: left;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  main {
-    height: 700px;
+  @media screen and (max-width: 48rem) {
+    height: 43.75rem;
+
+    h1 {
+      font-size: 3.125rem;
+    }
   }
 
-  #section-text {
-    margin: 10px 10px;
+  @media print {
+    height: 30rem;
   }
 }
 
-section {
+main {
   width: 60vw;
   font-size: 1rem;
   line-height: 1.5;
-  margin: 7% auto;
+  margin: 3% auto;
   max-width: 65rem;
-}
 
-/* Base styles */
+  @media screen and (max-width: 88.375rem) {
+    width: 90vw;
+  }
+
+  h2,
+  h3 {
+    font-family: "Poppins", sans-serif;
+  }
+}
 
 picture,
 img {
-  width: 250px;
+  width: 15.625rem;
+  height: 24.7708rem;
   transition: all 300ms ease-out;
 
   &:hover {
@@ -144,22 +91,18 @@ aside {
   float: right;
   margin-inline-start: 1rem;
   padding: 1rem;
-}
 
-@media screen and (max-width: 88.375rem ) {
-  aside {
-    float: none;
-    margin-inline-start: 0;
-  }
-
-  section {
-    width: 90vw;
-  }
-}
-
-@media screen and (max-width: 79.125rem) {
-  aside {
+  @media screen and (max-width: 79.125rem) {
     float: right;
     margin-inline-start: 1rem;
   }
+
+  @media screen and (max-width: 88.375rem) {
+    float: none;
+    margin-inline-start: 0;
+  }
+}
+
+a {
+  color: var(--text-color);
 }

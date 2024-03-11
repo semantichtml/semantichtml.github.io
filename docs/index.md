@@ -1,13 +1,13 @@
 <aside>
 <picture>
-      <source srcset="/sh-exemple-dark.svg" media="(prefers-color-scheme:dark)">
-      <img src="/sh-exemple-light.svg" alt="Sections">
+ <source srcset="/sh-exemple-dark.svg" media="(prefers-color-scheme:dark)">
+ <img src="/sh-exemple-light.svg" alt="Sections">
 </picture>
 </aside>
 
 ## What is Semantic HTML
 
-_Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in web pages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to human users._ - **Wikipedia** { #first }
+_Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in web pages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to human users._ - [**Wikipedia**](https://en.wikipedia.org/wiki/Semantic_HTML) { #first }
 
 ## Why is it important?
 
@@ -17,7 +17,7 @@ Semantic HTML is quite important for some reasons: { #second }
 
 2. **Code Maintainability**: Semantic HTML promotes clean and organized code. When you use semantic elements appropriately, your code becomes more self-explanatory and easier to read for both you and other developers who may work on the project. This makes maintenance and collaboration more efficient especially having an open source project.
 
-3. **User Experience**: Semantic HTML elements convey the structure of your content, making it easier for users to navigate your website. Visitors can quickly identify headers, main content areas, navigation menus, and footers, enhancing their overall experience and reducing confusion.\
+3. **User Experience**: Semantic HTML elements convey the structure of your content, making it easier for users to navigate your website. Visitors can quickly identify headers, main content areas, navigation menus, and footers, enhancing their overall experience and reducing confusion.
 
 This is just 3 reasons why it’s important, there are more like Future-Proofing as HTML is going for a more cleaner code structure, SEO Benefits as Search engines, like Google, rely on structured data to understand web content better. Semantic HTML elements provide this structure by defining the hierarchy and purpose of different parts of a webpage. When your website uses semantic elements like `<article>`, `<section>`, and `<time>`, search engines can index your content more accurately, potentially leading to higher search engine rankings and increased organic traffic.and other thing that basically make your website better.
 

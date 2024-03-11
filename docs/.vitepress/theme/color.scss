@@ -1,22 +1,20 @@
 :root {
-    --white: #fff;
-    --white-smoke: #F3F3F3;
-    --white-smooth: #E0E0E0;
-    --platinum: #E0E0E0;
-    
-    --black: #000;
-    --erie-black: #181818;
-    --ligher-erie-black: #222222;
+  --white: #fff;
+  --white-smoke: #f3f3f3;
+  --white-smooth: #e0e0e0;
+  --platinum: #e0e0e0;
 
-    --text-color: var(--black);
-    --aeolus-card: var(--platinum);
-    --footer-bg: var(--white-smoke);
-}
+  --black: #000;
+  --erie-black: #181818;
+  --ligher-erie-black: #222222;
 
-@media (prefers-color-scheme: dark) {
-    :root {
+  --text-color: var(--black);
+  --aeolus-card: var(--platinum);
+  --footer-bg: var(--white-smoke);
+
+  @media (prefers-color-scheme: dark) {
     --text-color: var(--white-smooth);
     --aeolus-card: var(--ligher-erie-black);
     --footer-bg: var(--erie-black);
-    }
+  }
 }

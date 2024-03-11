@@ -4,12 +4,12 @@ import ExternalLinks from "./components/ExternalLinks.vue";
 </script>
 
 <template>
-  <main>
+  <header>
     <h1>Semantic HTML</h1>
-  </main>
-  <section>
+  </header>
+  <main>
     <Content />
-  </section>
-  <ExternalLinks />
+    <ExternalLinks />
+  </main>
   <Footer />
 </template>
