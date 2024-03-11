@@ -3,26 +3,14 @@
   "version": "0.7.1",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check build-only",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
-  },
-  "dependencies": {
-    "@types/vue-router": "^2.0.0",
-    "vue": "^3.4.18",
-    "vue-router": "^4.2.5"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.0",
-    "@types/node": "^20.11.16",
-    "@vitejs/plugin-vue": "^4.6.0",
-    "@vue/tsconfig": "^0.4.0",
-    "npm-run-all": "^4.1.5",
-    "typescript": "~5.3.2",
-    "vite": "^4.5.1",
-    "vite-plugin-vue-devtools": "^7.0.2",
-    "vue-tsc": "^1.8.27"
+    "vitepress": "1.0.0-rc.45"
+  },
+  "dependencies": {
+    "sass": "^1.71.1"
   }
 }
