@@ -12,17 +12,18 @@ $bg-color-l: color.scale($color-accent, $lightness: 90%, $saturation: -85%);
   text-align: center;
   margin-bottom: 6.25rem;
   font-size: 1.875rem;
-  color: var(--color-background);
-  background: linear-gradient(95deg, #92ff7a 32.27%, #ddef6f 68.51%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-accent);
   font-weight: 900;
 
-  @media (prefers-color-scheme: light) {
-    color: var(--color-accent);
-    background: var(--color-accent);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: fill;  
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(95deg, #92ff7a 32.27%, #ddef6f 68.51%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  ::selection {
+    background-color: #000; /* Change the background color of the selected text */
+    color: #fff; /* Change the text color of the selected text */
   }
 }
 
@@ -42,7 +43,11 @@ h2 {
 
   li {
     list-style: none;
-    text-decoration: none;
+    text-align: center;
+  }
+
+  a {
+    display: block;
     padding: 20px;
     text-align: center;
     background-color: var(--color-background-second);
@@ -72,5 +77,17 @@ aside {
   figcaption {
     margin-top: 0.625rem;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px){
+  ul, ol {
+    margin: 0 0 0 10px;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+    margin-inline-start: 0;
   }
 }
