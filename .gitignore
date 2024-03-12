@@ -1,8 +1,17 @@
-node_modules
-node_modules/*
-dist
-.vscode/*
-.vscode
-.idea
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output directory
+dist/
+
+# Ignore temporary files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore Cache
 cache
+cache/*
 docs/.vitepress/cache

@@ -1,16 +1,17 @@
 {
-  "name": "semantic-html",
-  "version": "0.9.0",
-  "private": true,
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@fontsource/noto-color-emoji": "^5.0.25",
+    "@fontsource/noto-emoji": "^5.0.18",
+    "@fontsource/source-code-pro": "^5.0.17",
+    "inter-ui": "^4.0.2",
     "vitepress": "1.0.0-rc.45"
   },
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.71.1"
   }
 }

@@ -1,10 +1,33 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "en-US",
   title: "Semantic HTML",
-  description: "The Documentation about Semantic HTML",
+  description:
+    "This is a cool template for vitepress, it has a lot of features, and it's easy to use",
+
+  themeConfig: {
+    author: "Gabriel Cozma/Gabs",
+    nav: {
+      show: false,
+    },
+    footer: {
+      copyright: true,
+      poweredBy: true,
+
+      madeby: {
+        show: true,
+        name: "Gabs",
+        link: "https://gxbs.me",
+      },
+
+      sourcecode: {
+        show: true,
+        link: "https://github.com/semantichtml/semantichtml.github.io"
+      },
+    },
+  },
 
   head: [
     ['meta', { name: 'author', content: 'Gabriel Cozmaa' }],
@@ -29,4 +52,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:url', content: 'https://semantichtml.github.io/' }],
     ['meta', { name: 'twitter:image', content: '/poster.png' }]
   ],
-})
+  sitemap: {
+    hostname: "https://semantichtml.github.io/next/",
+  },
+});

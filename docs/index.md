@@ -1,15 +1,18 @@
-<aside>
-    <picture>
-        <source srcset="/sh-exemple-dark.svg" media="(prefers-color-scheme:dark)">
-        <img src="/sh-exemple-light.svg" alt="Sections">
-    </picture>
-</aside>
+# Semantic HTML { #page-title }
 
 ## What is Semantic HTML
 
-_Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in web pages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to human users._ - [**Wikipedia**](https://en.wikipedia.org/wiki/Semantic_HTML)
-
+_Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in web pages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentation to human users.[¹](#wikipedia) Semantic means "relating to meaning". Writing semantic HTML means using HTML elements to structure your content based on each element's meaning, not its appearance.[²](#webdev)_
 ## Why is it important?
+
+<aside>
+    <picture>
+        <source srcset="/sh-exemple-dark.svg" media="(prefers-color-scheme:dark)">
+        <img src="/sh-exemple-light.svg" alt="A diagram of a basic website structure using semantic HTML elements">
+    </picture>
+<figcaption>A diagram of a basic website structure using semantic HTML elements</figcaption>
+</aside>
+
 
 Semantic HTML holds significant importance for several reasons:
 
@@ -30,3 +33,18 @@ These are just six reasons why semantic HTML is important. There are additional 
 ## Conclusion
 
 As the web evolves towards cleaner and more structured code, Semantic HTML plays a vital role in this transition. Websites that implement schema.org markup alongside Semantic HTML are likely to gain a competitive advantage in SEO, as search engines increasingly prioritize structured data. Staying updated with these trends can position your website for success in the ever-changing online landscape.
+
+## Read More
+
+<section id="read-more">
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Semantic_HTML)
+- [Web Dev](https://web.dev/learn/html/semantic-html/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
+</section>
+
+---
+
+## Footnotes
+- ¹ - https://en.wikipedia.org/wiki/Semantic_HTML { #wikipedia }
+- ² - https://web.dev/learn/html/semantic-html/ { #webdev }

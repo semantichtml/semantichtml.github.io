@@ -1,15 +1,35 @@
 <script setup lang="ts">
-import Footer from "./components/Footer.vue";
-import ExternalLinks from "./components/ExternalLinks.vue";
+import { useData } from 'vitepress';
+import { Content } from 'vitepress';
+import NotFound from './components/404View.vue';
+import SiteFooter from './components/Footer.vue';
+import Navigation from './components/Navigation.vue';
+import BlogHead from './components/BlogHead.vue';
+import BlogFooter from './components/BlogFooter.vue';
+import SimpleLayout from './components/SimpleLayout.vue';
+import BlogList from './components/BlogList.vue';
+
+const { site, frontmatter, page } = useData()
 </script>
 
 <template>
-  <header>
-    <h1>Semantic HTML</h1>
-  </header>
+  <Navigation />
   <main>
-    <Content />
-    <ExternalLinks />
+    <div v-if="frontmatter.home">
+      <h1>{{ site.title }}</h1>
+    </div>
+    <div v-if="frontmatter.layout == 'blog'">
+      <BlogHead />
+    </div>
+    <NotFound v-if="page.isNotFound" />
+    <div v-else :class="frontmatter.pageClass">
+      <Content />
+    </div>
+    <BlogList v-if="frontmatter.layout == 'blog-list'" />
+    <SimpleLayout v-if="frontmatter.layout == 'simple'" />
+    <div v-if="frontmatter.layout == 'blog'">
+      <BlogFooter />
+    </div>
   </main>
-  <Footer />
+  <SiteFooter />
 </template>

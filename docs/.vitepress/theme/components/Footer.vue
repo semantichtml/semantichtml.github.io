@@ -1,57 +1,37 @@
+<script setup lang="ts">
+import { useData } from "vitepress";
+const { theme } = useData();
+</script>
+
 <template>
   <footer>
     <a
-      id="source-code"
-      href="https://github.com/semantichtml/semantichtml.github.io"
-      ><i class="fa-brands fa-github"
-    /></a>
-    <p id="credits">
-      Made with <i class="fa-solid fa-heart" id="red"></i> by
-      <a id="me" href="https://gabs.eu.org">Gabs</a>
+      style="margin: 16px; display: block;"
+      v-if="theme.footer.sourcecode?.show"
+      :href="theme.footer.sourcecode.link"
+      ><mark>Source Code</mark></a
+    >
+    <p v-if="theme.footer.madeby.show">
+      Made with ❤️ by
+      <a :href="theme.footer.madeby.link" id="author"
+        ><mark>{{ theme.footer.madeby.name }}</mark></a
+      >
     </p>
-    <p id="copyright">&copy; 2023 Gabs/Gabriel Cozma. All rights reserved.</p>
+    <p id="copyright" v-if="theme.footer.copyright">
+      &copy; {{ theme.author }},
+      <span v-if="theme.footer.startYear">{{ theme.footer.startYear }}-</span
+      >{{ new Date().getFullYear() }}.
+    </p>
+    <p id="copyleft" v-if="theme.footer.copyleft?.show">
+      &#127279; Licensed under the
+      <a :href="theme.footer.copyleft.info">{{
+        theme.footer.copyleft.license
+      }}</a
+      >.
+    </p>
+    <p id="powered" v-if="theme.footer.poweredBy">
+      Powered by <a href="https://vitepress.dev/">VitePress</a> and
+      <a href="https://aplos.gxbs.me">Aplós</a>
+    </p>
   </footer>
 </template>
-
-<style lang="scss">
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
-
-footer {
-  text-align: center;
-  border-radius: 40px 40px 0 0;
-  background-color: var(--footer-bg);
-  color: var(--text-color);
-  padding: 15px;
-
-  #red {
-    color: #dd2e44;
-  }
-
-  #me {
-    font-weight: 900;
-    text-decoration: underline;
-  }
-
-  #credits {
-    font-weight: 700;
-  }
-
-  #copyright {
-    font-weight: 600;
-    color: var(--text-color);
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
-
-  #source-code {
-    font-size: 25px;
-  }
-
-  @media print {
-    display: none;
-  }
-}
-</style>
