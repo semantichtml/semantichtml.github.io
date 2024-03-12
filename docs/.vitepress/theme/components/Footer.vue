@@ -18,7 +18,9 @@
 
 footer {
   text-align: center;
+  border-radius: 40px 40px 0 0;
   background-color: var(--footer-bg);
+  color: var(--text-color);
   padding: 15px;
 
   #red {
@@ -41,7 +43,7 @@ footer {
 
   a {
     text-decoration: none;
-    color: var(--text-color) !important;
+    color: var(--text-color);
   }
 
   #source-code {
