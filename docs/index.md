@@ -36,7 +36,7 @@ As the web evolves towards cleaner and more structured code, Semantic HTML plays
 
 ## Read More
 
-<section id="read-more">
+<section id="read-more-links">
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Semantic_HTML)
 - [Web Dev](https://web.dev/learn/html/semantic-html/)

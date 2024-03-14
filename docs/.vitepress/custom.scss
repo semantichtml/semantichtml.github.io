@@ -31,7 +31,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-#read-more ul {
+#read-more-links ul {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -77,17 +77,5 @@ aside {
   figcaption {
     margin-top: 0.625rem;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 600px){
-  ul, ol {
-    margin: 0 0 0 10px;
-  }
-
-  aside {
-    float: none;
-    width: 100%;
-    margin-inline-start: 0;
   }
 }
