@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@fontsource/noto-color-emoji':
-    specifier: ^5.0.25
-    version: 5.0.25
+    specifier: ^5.0.26
+    version: 5.0.26
   '@fontsource/noto-emoji':
     specifier: ^5.0.18
     version: 5.0.18
@@ -67,9 +67,6 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
     dependencies:
       '@algolia/client-search': 4.22.1
       algoliasearch: 4.22.1
@@ -442,8 +439,8 @@ packages:
     dev: false
     optional: true
 
-  /@fontsource/noto-color-emoji@5.0.25:
-    resolution: {integrity: sha512-ejntEYNBSR34yPxzk8O670YZnNJgXarscdFGesyuuorZ9hPa5PqVDRYnnmVBppOPkB3Z/WkOT5AMKGXxPdMlfg==}
+  /@fontsource/noto-color-emoji@5.0.26:
+    resolution: {integrity: sha512-DHw+bg3L8eM1DkD8Sotu6GJkg26n/7yUGGsTE9rja65WsXp/5V8u7QJAG8wXjOh8RZ7th30AV/ROfesbdK3xZQ==}
     dev: false
 
   /@fontsource/noto-emoji@5.0.18:
