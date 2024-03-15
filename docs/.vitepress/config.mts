@@ -8,7 +8,7 @@ export default defineConfig({
     "This is a cool template for vitepress, it has a lot of features, and it's easy to use",
 
   themeConfig: {
-    author: "Gabriel Cozma/Gabs",
+    author: "Semantic HTML Documentation",
     nav: {
       show: false,
     },
@@ -22,6 +22,12 @@ export default defineConfig({
         link: "https://gxbs.me",
       },
 
+      copyleft: {
+        show: true,
+        license: "GPL-3.0 license",
+        info: "https://www.gnu.org/licenses/gpl-3.0.html",
+      },
+
       sourcecode: {
         show: true,
         link: "https://github.com/semantichtml/semantichtml.github.io"
@@ -30,7 +36,7 @@ export default defineConfig({
   },
 
   head: [
-    ['meta', { name: 'author', content: 'Gabriel Cozmaa' }],
+    ['meta', { name: 'author', content: 'Gabriel Cozma' }],
     ['link', { rel: 'icon', href: '/icon.png' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     ['meta', { name: 'keywords', content: 'HTML, CSS, JavaScript, Web Development, Frontend,semantic html, Vue.js, web development, open source' }],
@@ -53,6 +59,6 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: '/poster.png' }]
   ],
   sitemap: {
-    hostname: "https://semantichtml.github.io/next/",
+    hostname: "https://semantichtml.github.io/",
   },
 });
