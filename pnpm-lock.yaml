@@ -14,11 +14,11 @@ dependencies:
 
 devDependencies:
   sass:
-    specifier: ^1.71.1
-    version: 1.71.1
+    specifier: ^1.72.0
+    version: 1.72.0
   vitepress:
     specifier: ^1.0.0-rc.45
-    version: 1.0.0-rc.45(@algolia/client-search@4.22.1)(sass@1.71.1)(search-insights@2.13.0)
+    version: 1.0.0-rc.45(@algolia/client-search@4.22.1)(sass@1.72.0)(search-insights@2.13.0)
 
 packages:
 
@@ -61,9 +61,6 @@ packages:
     peerDependencies:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
     dependencies:
       '@algolia/client-search': 4.22.1
       algoliasearch: 4.22.1
@@ -588,7 +585,7 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.1.6(sass@1.71.1)
+      vite: 5.1.6(sass@1.72.0)
       vue: 3.4.21
     dev: true
 
@@ -1020,8 +1017,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /sass@1.71.1:
-    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
+  /sass@1.72.0:
+    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -1066,7 +1063,7 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /vite@5.1.6(sass@1.71.1):
+  /vite@5.1.6(sass@1.72.0):
     resolution: {integrity: sha512-yYIAZs9nVfRJ/AiOLCA91zzhjsHUgMjB+EigzFb6W2XTLO8JixBCKCjvhKZaye+NKYHCrkv3Oh50dH9EdLU2RA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -1097,12 +1094,12 @@ packages:
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.13.0
-      sass: 1.71.1
+      sass: 1.72.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.0-rc.45(@algolia/client-search@4.22.1)(sass@1.71.1)(search-insights@2.13.0):
+  /vitepress@1.0.0-rc.45(@algolia/client-search@4.22.1)(sass@1.72.0)(search-insights@2.13.0):
     resolution: {integrity: sha512-/OiYsu5UKpQKA2c0BAZkfyywjfauDjvXyv6Mo4Ra57m5n4Bxg1HgUGoth1CLH2vwUbR/BHvDA9zOM0RDvgeSVQ==}
     hasBin: true
     peerDependencies:
@@ -1127,7 +1124,7 @@ packages:
       mark.js: 8.11.1
       minisearch: 6.3.0
       shiki: 1.1.7
-      vite: 5.1.6(sass@1.71.1)
+      vite: 5.1.6(sass@1.72.0)
       vue: 3.4.21
     transitivePeerDependencies:
       - '@algolia/client-search'
