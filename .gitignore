@@ -14,4 +14,3 @@ Thumbs.db
 # Ignore Cache
 cache
 cache/*
-docs/.vitepress/cache
