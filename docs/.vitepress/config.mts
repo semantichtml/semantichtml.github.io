@@ -5,7 +5,7 @@ export default defineConfig({
   lang: "en-US",
   title: "Semantic HTML",
   description:
-    "This is a cool template for vitepress, it has a lot of features, and it's easy to use",
+    "The Documentation about Semantic HTML",
 
   themeConfig: {
     author: "Semantic HTML Documentation",
