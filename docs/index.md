@@ -45,6 +45,5 @@ As the web evolves towards cleaner and more structured code, Semantic HTML plays
 
 ---
 
-## Footnotes
 - ¹ - https://en.wikipedia.org/wiki/Semantic_HTML { #wikipedia }
 - ² - https://web.dev/learn/html/semantic-html/ { #webdev }
