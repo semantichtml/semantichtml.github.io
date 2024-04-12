@@ -5,11 +5,10 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@fontsource/source-code-pro": "^5.0.17",
-    "inter-ui": "^4.0.2"
+    "aplos": "^1.2.5"
   },
   "devDependencies": {
-    "sass": "^1.72.0",
+    "sass": "^1.75.0",
     "vitepress": "^1.1.0"
   }
 }
