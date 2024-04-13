@@ -1,0 +1,78 @@
+* {
+  letter-spacing: 0 !important;
+}
+
+#page-title {
+  text-align: center;
+  margin-bottom: 6.25rem;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  font-weight: 900;
+
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(95deg, #92ff7a 32.27%, #ddef6f 68.51%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  ::selection {
+    background-color: #000; /* Change the background color of the selected text */
+    color: #fff; /* Change the text color of the selected text */
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+#read-more-links ul {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  min-width: 100%;
+  gap: 10px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-background-second);
+    border-radius: 8px;
+    transition: transform 0.3s ease 0s, background-color 0.3s ease 0s;
+
+    &:hover {
+      transform: scale(1.05);
+      text-decoration: underline 1px solid var(--color-accent);
+      background-color: var(--color-background-mute);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+aside {
+  background-color: transparent;
+  padding-bottom: 0;
+
+  img:hover {
+    border: 0;
+    border-radius: 0;
+  }
+
+  figcaption {
+    margin-top: 0.625rem;
+    margin-bottom: 0;
+  }
+}
