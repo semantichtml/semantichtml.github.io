@@ -28,6 +28,7 @@ h2 {
 
 #read-more-links ul {
   margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   min-width: 100%;
