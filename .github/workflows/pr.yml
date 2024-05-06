@@ -1,0 +1,49 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+        
+    - name: Set up PNPM
+      uses: pnpm/action-setup@v3
+      with:
+          version: latest
+
+    - name: Install dependencies
+      run: pnpm install
+      
+    - name: Build project
+      run: pnpm run docs:build
+            
+    - name: Check status and comment
+      if: ${{ always() }}
+      uses: actions/github-script@v4
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const result = process.env['GITHUB_RUN_CONCLUSION'];
+          const context = github.context;
+          const octokit = new github.GitHub(process.env.GITHUB_TOKEN);
+          if (context.eventName === 'pull_request') {
+            const prNumber = context.payload.pull_request.number;
+            octokit.issues.createComment({
+              ...context.repo,
+              issue_number: prNumber,
+              body: result === 'success' ? 'The build was successful!' : 'The build failed!'
+            });
+          }
