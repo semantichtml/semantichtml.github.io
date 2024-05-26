@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aplos:
-    specifier: ^1.5.0
-    version: 1.5.0
+    specifier: ^1.6.0
+    version: 1.6.0
 
 devDependencies:
   sass:
@@ -820,13 +820,13 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  /aplos@1.5.0:
-    resolution: {integrity: sha512-X4bQcRtzJzhFF4NIM6yaadUPagD45kBm54Hg5nSFZJl93HjmFnKaXPwku5fq8Cpv/JCLfCtHCkZNBgcCN5DHNQ==}
+  /aplos@1.6.0:
+    resolution: {integrity: sha512-pT4sJBxZrPbEyNNGcDJKDc/NofzIGLMgX1u5DnPcS1xnk+XusQVWiOddfdjLywhwvVC3cklAyFPXAVjrseENeA==}
     dependencies:
       '@csstools/normalize.css': 12.1.1
       inter-ui: 4.0.2
-      non.geist: 1.0.2
-      sass: 1.77.0
+      non.geist: 1.0.3
+      sass: 1.77.2
     dev: false
 
   /binary-extensions@2.3.0:
@@ -978,8 +978,8 @@ packages:
     hasBin: true
     dev: true
 
-  /non.geist@1.0.2:
-    resolution: {integrity: sha512-oGCfo7Ub5bJmCOAt4CMAsCrVal/JXkQtxgBcpXzdU3lQib9c5hHdr62I8vI6TtdlsLcaYAPD/HRfZNdBUobwFg==}
+  /non.geist@1.0.3:
+    resolution: {integrity: sha512-KTT38rJKUTijUZtwqZR38OJeHDupfTkl1JoVNVVoQ0vV41Zjax/BMULWFyXtsK5YCd1SU2ofFSJooD8nWClXcA==}
     dev: false
 
   /normalize-path@3.0.0:
@@ -1054,6 +1054,17 @@ packages:
       chokidar: 3.6.0
       immutable: 4.3.5
       source-map-js: 1.2.0
+    dev: true
+
+  /sass@1.77.2:
+    resolution: {integrity: sha512-eb4GZt1C3avsX3heBNlrc7I09nyT00IUuo4eFhAbeXWU2fvA7oXI53SxODVAA+zgZCk9aunAZgO+losjR3fAwA==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.5
+      source-map-js: 1.2.0
+    dev: false
 
   /search-insights@2.13.0:
     resolution: {integrity: sha512-Orrsjf9trHHxFRuo9/rzm0KIWmgzE8RMlZMzuhZOJ01Rnz3D0YBAe+V6473t6/H6c7irs6Lt48brULAiRWb3Vw==}
