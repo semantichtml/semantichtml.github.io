@@ -1,6 +1,6 @@
-import Aplos from "aplos/minimal/Layout.vue";
+import Aplos from "aplos/Layout.vue";
 import type { Theme } from "vitepress";
-import "aplos/minimal";
+import "aplos";
 import "./custom.scss";
 
 export default {

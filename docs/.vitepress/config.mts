@@ -7,6 +7,7 @@ export default defineConfig({
   description: "The Documentation about Semantic HTML",
 
   themeConfig: {
+    minimal: true,
     author: "Semantic HTML Documentation",
     nav: {
       show: false,
