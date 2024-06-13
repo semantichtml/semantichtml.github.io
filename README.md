@@ -5,6 +5,7 @@
 </div>
 
 ## Development
+
 As mentioned above it's build with VitePress, so for local development do the following:
 
 ### Load everything

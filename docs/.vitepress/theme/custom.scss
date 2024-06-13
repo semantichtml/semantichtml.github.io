@@ -49,7 +49,9 @@ h2 {
     text-align: center;
     background-color: var(--color-background-second);
     border-radius: 8px;
-    transition: transform 0.3s ease 0s, background-color 0.3s ease 0s;
+    transition:
+      transform 0.3s ease 0s,
+      background-color 0.3s ease 0s;
 
     &:hover {
       transform: scale(1.05);
