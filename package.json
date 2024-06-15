@@ -6,7 +6,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "aplos": "2.0.2",
+    "aplos": "2.1.0",
     "prettier": "^3.3.2"
   },
   "devDependencies": {
