@@ -74,3 +74,16 @@ aside {
     margin-bottom: 0;
   }
 }
+
+
+@media (prefers-color-scheme: light) {
+img[data-mode="darkmode-only"] {
+    display: none !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  img[data-mode="lightmode-only"] {
+    display: none !important;
+  }
+}

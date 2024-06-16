@@ -7,10 +7,10 @@ _Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning,
 ## Why is it important?
 
 <aside>
-    <picture>
-        <source srcset="/sh-exemple-dark.svg" media="(prefers-color-scheme:dark)">
-        <img src="/sh-exemple-light.svg" alt="A diagram of a basic website structure using semantic HTML elements">
-    </picture>
+
+![A diagram of a basic website structure using semantic HTML elements](sh-exemple-light.svg#light)
+![A diagram of a basic website structure using semantic HTML elements](sh-exemple-dark.svg#dark)
+
 <figcaption>A diagram of a basic website structure using semantic HTML elements</figcaption>
 </aside>
 

@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress";
+import { imgMark} from "@mdit/plugin-img-mark";
+import { figure } from "@mdit/plugin-figure";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,7 +26,7 @@ export default defineConfig({
 
       copyleft: {
         show: true,
-        license: "GPL-3.0 license",
+        license: "GPL-3.0 License",
         info: "https://www.gnu.org/licenses/gpl-3.0.html",
       },
 
@@ -32,6 +34,13 @@ export default defineConfig({
         show: true,
         link: "https://github.com/semantichtml/semantichtml.github.io",
       },
+    },
+  },
+
+  markdown: {
+    config: (md) => {
+      md.use(imgMark);
+      md.use(figure);
     },
   },
 
