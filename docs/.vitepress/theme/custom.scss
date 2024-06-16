@@ -75,9 +75,8 @@ aside {
   }
 }
 
-
 @media (prefers-color-scheme: light) {
-img[data-mode="darkmode-only"] {
+  img[data-mode="darkmode-only"] {
     display: none !important;
   }
 }

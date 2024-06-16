@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { imgMark} from "@mdit/plugin-img-mark";
+import { imgMark } from "@mdit/plugin-img-mark";
 import { figure } from "@mdit/plugin-figure";
 
 // https://vitepress.dev/reference/site-config
