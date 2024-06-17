@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import { imgMark } from "@mdit/plugin-img-mark";
-import { figure } from "@mdit/plugin-figure";
+import { footnote } from "@mdit/plugin-footnote";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -40,7 +40,7 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(imgMark);
-      md.use(figure);
+      md.use(footnote);
     },
   },
 
