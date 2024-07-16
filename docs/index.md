@@ -28,7 +28,7 @@ Semantic HTML holds significant importance for several reasons:
 
 6. **Future Compatibility**: Semantic HTML is forward-compatible, meaning it is designed to work well with future technologies and updates. By using semantic elements, you future-proof your code and make it easier to adapt to new standards and best practices as they emerge.
 
-These are just six reasons why semantic HTML is important. There are additional benefits, such as the Semantic HTML elements like: `<article>`, `<section>`, `<time>` and many othera define the hierarchy and purpose of different parts of a webpage, enabling search engines to index your content more accurately. This can potentially lead to higher search engine rankings and increased organic traffic.
+These are just six reasons why semantic HTML is important. There are additional benefits, such as the Semantic HTML elements like: `<article>`, `<section>`, `<time>` and many others define the hierarchy and purpose of different parts of a webpage, enabling search engines to index your content more accurately. This can potentially lead to higher search engine rankings and increased organic traffic.
 
 ## Conclusion
 
@@ -38,9 +38,9 @@ As the web evolves towards cleaner and more structured code, Semantic HTML plays
 
 <section id="read-more-links">
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Semantic_HTML)
-- [web.dev](https://web.dev/learn/html/semantic-html/)
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
+- [![Wikipedia](wikipedia.png#static)](https://en.wikipedia.org/wiki/Semantic_HTML)
+- [![web.dev](webdev.svg#static)](https://web.dev/learn/html/semantic-html/)
+- [![MDN Web Docs](mdn.svg#static)](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
 </section>
 
 [^wikipedia]: https://en.wikipedia.org/wiki/Semantic_HTML
