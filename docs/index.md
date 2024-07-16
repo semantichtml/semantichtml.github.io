@@ -38,9 +38,9 @@ As the web evolves towards cleaner and more structured code, Semantic HTML plays
 
 <section id="read-more-links">
 
-- [![Wikipedia](wikipedia.png#static)](https://en.wikipedia.org/wiki/Semantic_HTML)
-- [![web.dev](webdev.svg#static)](https://web.dev/learn/html/semantic-html/)
-- [![MDN Web Docs](mdn.svg#static)](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
+- [![Wikipedia](/wikipedia.png#static)](https://en.wikipedia.org/wiki/Semantic_HTML)
+- [![web.dev](/webdev.svg#static)](https://web.dev/learn/html/semantic-html/)
+- [![MDN Web Docs](/mdn.svg#static)](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
 </section>
 
 [^wikipedia]: https://en.wikipedia.org/wiki/Semantic_HTML
